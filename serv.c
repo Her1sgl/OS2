@@ -21,7 +21,7 @@ int main() {
     serverAddress.sin_family = AF_INET;
     serverAddress.sin_port = htons(PORT);
 
-    // Converting address to the binary form
+ 
     if (inet_pton(AF_INET, "127.0.0.1", &serverAddress.sin_addr) <= 0) {
         printf("Error: Address not supported \n");
         exit(EXIT_FAILURE);
