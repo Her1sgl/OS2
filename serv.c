@@ -8,7 +8,7 @@
 #include <errno.h>
 
 #define PORT 3030
-#define BACKLOG 5
+#define CON 5
 
 volatile sig_atomic_t wasSigHup = 0;
 
@@ -47,7 +47,7 @@ int main() {
     }
 
     
-    if (listen(serverFD, BACKLOG) < 0) {
+    if (listen(serverFD, CON) < 0) {
         perror("listen error");
         exit(EXIT_FAILURE);
     }
