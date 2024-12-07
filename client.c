@@ -7,7 +7,7 @@
 #include <arpa/inet.h>
 
 
-#define PORT 3030
+#define PORT 3000
 
 int main() {
     struct sockaddr_in serverAddress;
