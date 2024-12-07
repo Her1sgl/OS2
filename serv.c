@@ -7,7 +7,7 @@
 #include <netinet/in.h>
 #include <errno.h>
 
-#define PORT 3030
+#define PORT 3000
 #define CON 5
 
 volatile sig_atomic_t wasSigHup = 0;
